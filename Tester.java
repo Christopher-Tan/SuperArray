@@ -13,5 +13,12 @@ public class Tester {
         for (int i = 0; i < test.size(); i++) {
             System.out.println(test.get(i));
         }
+        //Set
+        for (int i = 0; i < test.size(); i++) {
+            System.out.println(test.set(i,"0"));
+        }
+        for (int i = 0; i < test.size(); i++) {
+            System.out.println(test.get(i));
+        }
     }
 }
