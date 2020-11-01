@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class Tester {
     public static void main(String[] args) {
         //Create SuperArray
@@ -19,6 +20,10 @@ public class Tester {
         }
         for (int i = 0; i < test.size(); i++) {
             System.out.println(test.get(i));
+        }
+        //AutoResizing
+        for (int i = 0; i < 20; i++) {
+            System.out.println(test.add("0"));
         }
     }
 }
