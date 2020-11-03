@@ -24,5 +24,9 @@ public class Tester {
         for (int i = 0; i < 20; i++) {
             System.out.println(test.add("0"));
         }
+        //isEmpty and clear
+        System.out.println(test.isEmpty());
+        test.clear();
+        System.out.println(test.isEmpty());
     }
 }
