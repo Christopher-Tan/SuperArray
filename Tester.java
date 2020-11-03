@@ -15,18 +15,20 @@ public class Tester {
         }
         //Set
         for (int i = 0; i < test.size(); i++) {
-            System.out.println(test.set(i,"0"));
+            System.out.println(test.set(i,"" + i));
         }
         for (int i = 0; i < test.size(); i++) {
             System.out.println(test.get(i));
         }
         //AutoResizing
         for (int i = 0; i < 20; i++) {
-            System.out.println(test.add("0"));
+            System.out.println(test.add("" + i));
         }
         //isEmpty and clear
         System.out.println(test.isEmpty());
+        System.out.println(test);
         test.clear();
         System.out.println(test.isEmpty());
+        System.out.println(test);
     }
 }
