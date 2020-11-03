@@ -30,5 +30,12 @@ public class Tester {
         test.clear();
         System.out.println(test.isEmpty());
         System.out.println(test);
+        //contains
+        test.add("Hello");
+        test.add("Hi");
+        System.out.println(test);
+        System.out.println(test.contains("He"));
+        System.out.println(test.contains("Hi"));
+        System.out.println(test.contains("Hello"));
     }
 }
