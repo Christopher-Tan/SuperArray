@@ -37,5 +37,7 @@ public class Tester {
         System.out.println(test.contains("He"));
         System.out.println(test.contains("Hi"));
         System.out.println(test.contains("Hello"));
+        //New Constructor
+        SuperArray tester = new SuperArray(100);
     }
 }

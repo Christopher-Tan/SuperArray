@@ -1,9 +1,13 @@
 public class SuperArray {
-    private String[] data;
+    public String[] data;
     private int size;
 
     public SuperArray() {
         data = new String[10];
+        size = 0;
+    }
+    public SuperArray(int initialCapacity) {
+        data = new String[initialCapacity];
         size = 0;
     }
     public int size() {
