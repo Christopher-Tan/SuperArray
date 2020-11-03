@@ -1,5 +1,5 @@
 public class SuperArray {
-    public String[] data;
+    private String[] data;
     private int size;
 
     public SuperArray() {
@@ -64,5 +64,12 @@ public class SuperArray {
             }
         }
         return false;
+    }
+    public void add(int index, String element) {
+        size++;
+        for (int i = size - 1; i >= index + 1; i--) {
+            data[i] = data[i - 1];
+        }
+        data[index] = element;
     }
 }

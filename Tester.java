@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class Tester {
     public static void main(String[] args) {
         //Create SuperArray
@@ -39,5 +40,10 @@ public class Tester {
         System.out.println(test.contains("Hello"));
         //New Constructor
         SuperArray tester = new SuperArray(100);
+        //New add
+        test.add(1,"Middle");
+        System.out.println(test);
+        test.add(1,"Second");
+        System.out.println(test);
     }
 }
