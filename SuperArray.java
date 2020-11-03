@@ -59,7 +59,7 @@ public class SuperArray {
     }
     public boolean contains(String s) {
         for (int i = 0; i < size; i++) {
-            if (data[i] == s) {
+            if (data[i].equals(s)) {
                 return true;
             }
         }
@@ -80,5 +80,13 @@ public class SuperArray {
         data[size - 1] = null;
         size--;
         return result;
+    }
+    public int indexOf(String s) {
+        for (int i = 0; i < size; i++) {
+            if (data[i].equals(s)) {
+                return i;
+            }
+        }
+        return -1;
     }
 }
