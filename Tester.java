@@ -45,5 +45,7 @@ public class Tester {
         System.out.println(test);
         test.add(1,"Second");
         System.out.println(test);
+        System.out.println(test.remove(2));
+        System.out.println(test);
     }
 }
