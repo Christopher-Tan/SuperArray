@@ -49,5 +49,6 @@ public class Tester {
         System.out.println(test);
         System.out.println(test.indexOf("Second"));
         System.out.println(test.indexOf("Hey"));
+        System.out.println(Arrays.toString(test.toArray()));
     }
 }
