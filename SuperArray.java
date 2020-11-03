@@ -26,7 +26,7 @@ public class SuperArray {
         return result;
     }
     private void resize() {
-        String[] result = new String[size + 10];
+        String[] result = new String[2 * size];
         for (int i = 0; i < size; i++) {
             result[i] = data[i];
         }
@@ -40,8 +40,8 @@ public class SuperArray {
         }
     }
     public void clear() {
+        data = new String[size];
         size = 0;
-        data = new String[10];
     }
     public String toString() {
         String result = "[";
