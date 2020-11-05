@@ -66,6 +66,9 @@ public class SuperArray {
         return false;
     }
     public void add(int index, String element) {
+        if (size >= data.length) {
+            resize();
+        }
         size++;
         for (int i = size - 1; i >= index + 1; i--) {
             data[i] = data[i - 1];
@@ -94,24 +97,6 @@ public class SuperArray {
         for (int i = 0; i < size; i++) {
             result[i] = data[i];
         }
-        return result;
-    }
-    public static void removeDuplicates(SuperArray s) {
-        for (int i = s.size - 1; i > 0; i--) {
-            if (s.indexOf(s.get(i)) == i) {
-            } else {
-                s.remove(i);
-            }
-        }
-    }
-    public static SuperArray findOverlap(SuperArray a, SuperArray b) {
-        SuperArray result = new SuperArray();
-        for (int i = 0; i < a.size; i++) {
-            if (b.contains(a.get(i))) {
-                result.add(a.get(i));
-            }
-        }
-        removeDuplicates(result);
         return result;
     }
 }

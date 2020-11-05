@@ -50,29 +50,5 @@ public class Tester {
         System.out.println(test.indexOf("Second"));
         System.out.println(test.indexOf("Hey"));
         System.out.println(Arrays.toString(test.toArray()));
-        //Remove Duplicates
-        String[] b = {"Hi", "Hi1", "Hello", "Hi", "Hello", "Hi2", "Hi1", "1", "2", "2", "3"};
-        for (int i = 0; i < b.length; i++) {
-            System.out.println(tester.add(b[i]));
-            System.out.println(tester.size());
-        }
-        SuperArray.removeDuplicates(tester);
-        System.out.println(tester);
-        //Find Overlap
-        System.out.println(SuperArray.findOverlap(tester,test));
-        System.out.println(SuperArray.findOverlap(test,tester));
-        SuperArray m = new SuperArray();
-        SuperArray n = new SuperArray();
-        String[] c = {"9","1","2","2","3","4"};
-        String[] d = {"0","4","2","2","9"};
-        for (int i = 0; i < c.length; i++) {
-            m.add(c[i]);
-        }
-        for (int i = 0; i < d.length; i++) {
-            n.add(d[i]);
-        }
-        System.out.println(m);
-        System.out.println(n);
-        System.out.println(SuperArray.findOverlap(m,n));
     }
 }
