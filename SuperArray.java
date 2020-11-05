@@ -96,4 +96,12 @@ public class SuperArray {
         }
         return result;
     }
+    public static void removeDuplicates(SuperArray s) {
+        for (int i = s.size - 1; i > 0; i--) {
+            if (s.indexOf(s.get(i)) == i) {
+            } else {
+                s.remove(i);
+            }
+        }
+    }
 }

@@ -50,5 +50,14 @@ public class Tester {
         System.out.println(test.indexOf("Second"));
         System.out.println(test.indexOf("Hey"));
         System.out.println(Arrays.toString(test.toArray()));
+        //Remove Duplicates
+        test.clear();
+        String[] b = {"Hi", "Hi1", "Hello", "Hi", "Hello", "Hi2", "Hi1", "1", "2", "2", "3"};
+        for (int i = 0; i < b.length; i++) {
+            System.out.println(test.add(b[i]));
+            System.out.println(test.size());
+        }
+        SuperArray.removeDuplicates(test);
+        System.out.println(test);
     }
 }
