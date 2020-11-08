@@ -50,5 +50,9 @@ public class Tester {
         System.out.println(test.indexOf("Second"));
         System.out.println(test.indexOf("Hey"));
         System.out.println(Arrays.toString(test.toArray()));
+        test.add("Second");
+        //lastindexof
+        System.out.println(test.lastIndexOf("Second"));
+        System.out.println(test.lastIndexOf("None"));
     }
 }
