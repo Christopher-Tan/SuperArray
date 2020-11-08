@@ -119,12 +119,4 @@ public class SuperArray {
         }
         return true;
     }
-    public static SuperArray zip(SuperArray a, SuperArray b) {
-        SuperArray result = new SuperArray();
-        for (int i = 0; i < Math.max(a.size, b.size); i++) {
-            if (i < a.size) result.add(a.data[i]);
-            if (i < b.size) result.add(b.data[i]);
-        }
-        return result;
-    }
 }
