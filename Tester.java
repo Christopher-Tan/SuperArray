@@ -65,7 +65,9 @@ public class Tester {
         System.out.println(test.equals(k));
         k.set(2,"H");
         System.out.println(test.equals(k));
-        k.add("Hello");
+        k.add("Added");
         System.out.println(test.equals(k));
+        System.out.println(SuperArray.zip(test,k));
+        System.out.println(SuperArray.zip(k,test));
     }
 }
