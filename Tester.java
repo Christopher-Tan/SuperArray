@@ -54,5 +54,18 @@ public class Tester {
         //lastindexof
         System.out.println(test.lastIndexOf("Second"));
         System.out.println(test.lastIndexOf("None"));
+        SuperArray k = new SuperArray();
+        k.add("Hello");
+        System.out.println(test.equals(k));
+        k.add("Second");
+        System.out.println(test.equals(k));
+        k.add("Hi");
+        System.out.println(test.equals(k));
+        k.add("Second");
+        System.out.println(test.equals(k));
+        k.set(2,"H");
+        System.out.println(test.equals(k));
+        k.add("Hello");
+        System.out.println(test.equals(k));
     }
 }
