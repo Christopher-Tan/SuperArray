@@ -100,5 +100,23 @@ public class Tester {
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
+
+        System.out.println(test);
+
+        try {
+            test.remove(5);
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
+        System.out.println(test);
+
+
+        try {
+            test.remove(4);
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
+        System.out.println(test);
+
     }
 }
