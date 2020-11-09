@@ -67,5 +67,11 @@ public class Tester {
         System.out.println(test.equals(k));
         k.add("Added");
         System.out.println(test.equals(k));
+        //Error Handling
+        try {
+            SuperArray t = new SuperArray(-1);
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        } 
     }
 }
