@@ -86,5 +86,12 @@ public class Tester {
         } catch (RuntimeException e) {
             e.printStackTrace();
         }
+
+        try {
+            test.set(4,"Hi");
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
+        System.out.println(test);
     }
 }
