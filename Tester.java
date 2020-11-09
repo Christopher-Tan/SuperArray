@@ -93,5 +93,12 @@ public class Tester {
             e.printStackTrace();
         }
         System.out.println(test);
+
+        try {
+            test.add(4,"Hi");
+            test.add(6,"Hi");
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
     }
 }

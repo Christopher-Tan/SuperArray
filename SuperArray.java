@@ -75,6 +75,9 @@ public class SuperArray {
         return false;
     }
     public void add(int index, String element) {
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException("Index must be between 0 and current size (" + (size) + ")"); 
+        }
         if (size >= data.length) {
             resize();
         }
